@@ -13,21 +13,9 @@ function Data() {
     const [files, setFiles] = useState([]);
 
     useEffect(() => {
-        db.collection("myfiles").onSnapshot(snapshot => {
-            setFiles(snapshot.docs.map(doc => ({
-                id: doc.id,
-                data: doc.data()
-            })))
-        })
-    }, [])
-
-    useEffect(() => {
         if (auth.currentUser) {
-            db.collection("myfiles")
-                .where("userId", "==", auth.currentUser.uid)
-                .onSnapshot((snapshot) => {
-                    setFiles(
-                        snapshot.docs.map((doc) => ({
+            db.collection("myfiles").where("userId", "==", auth.currentUser.uid).onSnapshot((snapshot) => {
+                    setFiles(snapshot.docs.map((doc) => ({
                             id: doc.id,
                             data: doc.data(),
                         }))
@@ -104,8 +92,6 @@ function Data() {
                             </div>
                         })
                     }
-
-
                 </div>
             </div>
         </div>

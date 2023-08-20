@@ -35,16 +35,8 @@ function Sidebar() {
         event.preventDefault();
         setuploading(true);
     
-        if (auth.currentUser) {
-            storage
-                .ref(`files/${file.name}`)
-                .put(file)
-                .then((snapshot) => {
-                    storage
-                        .ref('files')
-                        .child(file.name)
-                        .getDownloadURL()
-                        .then((url) => {
+        if (auth.currentUser) {storage.ref(`files/${file.name}`).put(file).then((snapshot) => {
+                    storage.ref('files').child(file.name).getDownloadURL().then((url) => {
                             db.collection("myfiles").add({
                                 userId: auth.currentUser.uid, // Store the user's uid
                                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -68,7 +60,7 @@ function Sidebar() {
                 <div className='modal_pop'>
                     <form className='mo'>
                         <div className='modalHeading'>
-                            <h3>Select file you want to upload</h3>
+                            <h3>Select file</h3>
                             <button  onClick={handleClose}>
                                 <CloseIcon />
                             </button>

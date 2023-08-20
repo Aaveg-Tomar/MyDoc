@@ -11,12 +11,11 @@ import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
             <img className=' w-28' src='https://img.freepik.com/free-vector/illustration-share-icon_53876-5841.jpg?w=740&t=st=1690865680~exp=1690866280~hmac=1929ee057c1f62c6f81f616076277bcb940ffbbc1a81923d58a3f85b3b2fb45b'/>
             <span>MyDoc</span>
         </div>
-        <div className='header_search'>
+        {/* <div className='header_search'>
             <SearchIcon/>
             <input placeholder='search in doc' type='text' />
             <FormatAlignCenterIcon/>
-
-        </div>
+        </div> */}
         <div className='header_icons'>
             <span>
                 {/* <AppsIcon/> */}
