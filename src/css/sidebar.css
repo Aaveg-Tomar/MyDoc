@@ -1,0 +1,137 @@
+.sidebar{
+    margin-top: 10px;
+
+}
+
+.mod{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sidebar_btn button{
+    background-color: transparent;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.sidebar_btn button  span{
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.sidebar_options{
+    margin-top: 10px;
+}
+
+.sidebar_option{
+    display: flex;
+    align-items: center;
+    padding: 8px  20px;
+    border-radius: 0px 20px 20px 0px ;
+}
+
+.sidebar_option:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.sidebar_option span{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+}
+
+.sidebar_option-Active{
+    background-color: #e8f0fe;
+}
+
+.sidebar_option-Active{
+    color: #1367d2;
+}
+
+.sidebar_option-Active span{
+    color: #1367d2;
+}
+
+.progress_bar{
+    padding: 0px 20px;
+}
+
+.progress_bar span{
+    display: block;
+    font-size: 13px;
+    color: #333;
+
+}
+
+
+.modal_pop{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    background-color: #fff;
+    margin: 0px auto;
+   
+    transform: translateY(-100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modalHeading{
+    display: flex;
+    margin: 9px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+}
+
+.modalHeading h3{
+    margin: 10px;
+}
+
+.modalHeading button{
+    margin-left: 144px;
+} 
+
+input.post_submit{
+    width: 100%;
+    background-color: #2381fa;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.mo{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.uploading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploading img{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
